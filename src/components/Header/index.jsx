@@ -4,6 +4,7 @@ import styles from './Header.module.css';
 export default function Header({ title, current, total }) {
     const [time, setTime] = useState(0);
 
+    // reseta o tempo sempre que a questão atual mudar
     useEffect(() => {
         setTime(0);
         const timer = setInterval(() => setTime((t) => t + 1), 1000);

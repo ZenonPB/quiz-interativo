@@ -7,6 +7,7 @@ export default function ScoreBoard({ answers, questions, onRestart }) {
 
     const isCorrect = ans.answer === question.answer;
 
+    // retorna um novo objeto com os dados da resposta e da questão
     return {
       ...ans,                        
       questionText: question.question, 
@@ -17,6 +18,7 @@ export default function ScoreBoard({ answers, questions, onRestart }) {
   });
 
   const totalPoints = results
+    // soma os pontos das respostas corretas utlizando filter e reduce pois o map retorna um array com todos os valores
     .filter(r => r.isCorrect)
     .reduce((sum, r) => sum + r.points, 0);
 

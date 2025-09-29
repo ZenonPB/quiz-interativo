@@ -12,6 +12,8 @@ function App() {
   const [step, setStep] = useState("quiz"); // define a parte do quiz que o usuario está (quiz ou resultado)
 
 const handleAnswer = (option, timeSpent) => {
+
+  // adiciona a resposta do usuario ao array de respostas
   setAnswer(prev => [
     ...prev,
     {
