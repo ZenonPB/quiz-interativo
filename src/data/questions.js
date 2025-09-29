@@ -36,7 +36,7 @@ const questions = [
         id: 5,
         question: "Qual é o incidente nomeado abóbora123",
         options: ["O dia que o samuel pulou da janela", "O dia que o samuel deu ração de gato à Heloisa", "O dia no qual o samuel se CAGOU no SENAI", "O dia que o samuel jogou a mesa na liliane"],
-        answer: "o dia no qual o samuel se CAGOU no SENAI",
+        answer: "O dia no qual o samuel se CAGOU no SENAI",
         points: 2
     },
     
@@ -75,8 +75,8 @@ const questions = [
     {
         id: 10,
         question: "Qual é o hiperfoco do samuel?",
-        options: ["Piratas", "Bloons TD 6", "Sabotage", "Todos acima"],
-        answer: "Todos acima",
+        options: ["Piratas", "Bloons TD 6", "Sabotage", "Todos citados"],
+        answer: "Todos citados",
         points: 2
     }
 ]

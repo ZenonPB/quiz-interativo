@@ -1,0 +1,43 @@
+.card {
+  width: 100%;
+  max-width: 700px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  color: #333;
+  margin: 0;
+}
+
+.card span {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.options button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  background: #f0f3fa;
+  color: #333;
+  border: 2px solid transparent;
+  transition: background 0.2s ease, border 0.2s ease;
+}
+
+.options button:hover {
+  background: #e6ebf9;
+  border: 2px solid #4f6ef7;
+}
