@@ -3,7 +3,7 @@ import styles from './App.module.css'
 import Header from './components/Header'
 import QuestionCard from './components/QuestionCard'
 import questions from './data/questions.js'
-// import ScoreBoard from './components/ScoreBoard'
+import ScoreBoard from './components/ScoreBoard'
 
 
 function App() {
@@ -11,25 +11,28 @@ function App() {
   const [answer, setAnswer] = useState([]); // armazena as respostas do usuario
   const [step, setStep] = useState("quiz"); // define a parte do quiz que o usuario está (quiz ou resultado)
 
-  const handleAnswer = (option, timeSpent) => {
-    setAnswer(anterior => [
-      ...anterior,
-      {
-        questionId: questions[current].id,
-        answer: option,
-        time: timeSpent
-      }
-    ]);
-
-    // avança para a próxima questão ou para o resultado, dependendo do nº da questão atual
-    if (current < questions.length - 1) {
-      setCurrent(current + 1);
-    } else {
-      setStep("resultado");
+const handleAnswer = (option, timeSpent) => {
+  setAnswer(prev => [
+    ...prev,
+    {
+      questionId: questions[current].id,
+      answer: option,   
+      time: timeSpent
     }
+  ]);
 
-  };
+  if (current < questions.length - 1) {
+    setCurrent(current + 1);
+  } else {
+    setStep("resultado");
+  }
+};
 
+  const handleRestart = () => {
+    setAnswer([]);
+    setCurrent(0);
+    setStep("quiz");
+  }
 
   return (
       <div className={styles.App}>
@@ -50,7 +53,11 @@ function App() {
             />
           </>
         ) : (
-            <ScoreBoard />
+            <ScoreBoard 
+              answers={answer}
+              questions={questions}
+              onRestart={handleRestart}
+            />
           )}
       </div>
   )

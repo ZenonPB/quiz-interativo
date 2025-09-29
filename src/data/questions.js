@@ -34,54 +34,49 @@ const questions = [
 
     {
         id: 5,
-        question: "Qual comando cria um novo projeto React com Vite?",
-        options: [
-            "npx create-react-app",
-            "npm init vite@latest",
-            "npm install vite",
-            "npx react-vite"
-        ],
-        answer: "npm init vite@latest",
+        question: "Qual é o incidente nomeado abóbora123",
+        options: ["O dia que o samuel pulou da janela", "O dia que o samuel deu ração de gato à Heloisa", "O dia no qual o samuel se CAGOU no SENAI", "O dia que o samuel jogou a mesa na liliane"],
+        answer: "o dia no qual o samuel se CAGOU no SENAI",
         points: 2
     },
     
     {
         id: 6,
-        question: "Qual hook pode ser usado para armazenar valores entre renderizações sem causar re-render?",
-        options: ["useState", "useEffect", "useRef", "useMemo"],
-        answer: "useRef",
+        question: "Qual o nome da filha do samuel?",
+        options: ["Alícia", "Renata", "Lulu", "Rebeca"],
+        answer: "Rebeca",
         points: 4
     },
 
     {
         id: 7,
-        question: "Qual hook é mais indicado para memorizar valores derivados de cálculos caros?",
-        options: ["useReducer", "useMemo", "useEffect", "useCallback"],
-        answer: "useMemo",
+        question: "Qual o artista mais ouvido no spotify do samuel?",
+        options: ["Sabrina Carpenter", "Racionais MC", "Eminem", "Sabotage"],
+        answer: "Sabotage",
         points: 5
     },
 
     {
         id: 8,
-        question: "Qual hook é usado para funções que precisam ser memorizadas?",
-        options: ["useEffect", "useCallback", "useMemo", "useState"],
-        answer: "useCallback",
+        question: "Em 2018, após falarem que odiavam o samuel, qual foi a resposta que ele deu?",
+        options: ["Desculpa", "Foda-se", "Por que, meu caro amigo?", "Sua mãe"],
+        answer: "Sua mãe",
         points: 4
     },
 
     {
         id: 9,
-        question: "Em React, como chamamos o processo de atualizar a interface quando o estado muda?",
-        options: ["Binding", "Re-renderização", "Rebuild", "Patch"],
-        answer: "Re-renderização",
+        question: "Qual o seriado preferido do samuel?",
+        options: ["Breaking Bad", "Game of Thrones", "The Flash", "Miraculous"],
+        answer: "Breaking Bad",
         points: 3
     },
     
     {
         id: 10,
-        question: "Qual ferramenta é usada para inspecionar o estado e props de componentes React no navegador?",
-        options: ["Redux DevTools", "React DevTools", "Chrome Inspector", "Vite Plugin"],
-        answer: "React DevTools",
+        question: "Qual é o hiperfoco do samuel?",
+        options: ["Piratas", "Bloons TD 6", "Sabotage", "Todos acima"],
+        answer: "Todos acima",
         points: 2
     }
 ]
