@@ -2,33 +2,33 @@ const questions = [
 
     {
         id: 1,
-        question: "Qual hook é usado para gerenciar estados em componentes funcionais?",
-        options: ["useEffect", "useState", "useProps", "useClass"],
-        answer: "useState",
+        question: "Qual é o nome completo do samuel?",
+        options: ["Samuel Moreira Ferreira", "Samuel Antônio Moreira Ferreira", "Samuel Silva", "Samuel Ferreira"],
+        answer: "Samuel Moreira Ferreira",
         points: 2
     },
 
     {
         id: 2,
-        question: "Qual hook é usado para efeitos colaterais no React?",
-        options: ["useMemo", "useEffect", "useReducer", "useRef"],
-        answer: "useEffect",
+        question: "Qual é a data de nascimento do samuel?",
+        options: ["01/04/2008", "05/10/2011", "01/02/2008", "01/02/2007"],
+        answer: "01/02/2008",
         points: 3
     },
 
     {
         id: 3,
-        question: "Qual é a forma correta de passar dados entre componentes?",
-        options: ["Hooks", "Props", "State", "Redux"],
-        answer: "Props",
+        question: "Por qual desses motivos o samuel NÃO tomou uma ocorrência na escola?",
+        options: ["Pulou a janela", "Falar que o israel peidou", "Usou um de seus 5 celulares", "Verificou se o bumbum estava realmente sujo"],
+        answer: "Verificou se o bumbum estava realmente sujo",
         points: 1
     },
 
     {
         id: 4,
-        question: "Qual extensão normalmente é usada para arquivos de componentes React?",
-        options: [".js", ".jsx", ".html", ".css"],
-        answer: ".jsx",
+        question: "O samuel está autorizado: ",
+        options: ["Beber na garrafa alheia", "De bermuda", "Descobrir um novo jeito de andar de bike", "A dormir demais"],
+        answer: "De bermuda",
         points: 1
     },
 

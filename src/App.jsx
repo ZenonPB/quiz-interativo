@@ -1,10 +1,22 @@
-import './App.css'
+import './App.module.css'
 
 function App() {
+  const [current, setCurrent] = useState(0);
+  const [step, setStep] = useState("quiz");
+
 
   return (
     <>
-    <h1></h1>
+      <div className={styles.App}>
+        
+        {step === "quiz" ? (
+          <Header />
+          <QuestionCard />
+        )
+          : (
+            <ScoreBoard />
+          )}
+      </div>
     </>
   )
 }
